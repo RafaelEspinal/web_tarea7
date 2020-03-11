@@ -5,6 +5,7 @@ class Api extends CI_Controller {
 
 	function index()
 	{
+		$this->load->helper('entidades');
 		$this->load->view('insertar');
 		
 	}
@@ -13,6 +14,9 @@ class Api extends CI_Controller {
 	{
 		$this->load->view('api_resiviendo');
 	}
-	
+
+	function dashboard(){
+		$this->load->view('dashboard');
+	}
 	
 }

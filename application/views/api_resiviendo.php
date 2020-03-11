@@ -1,8 +1,7 @@
 <?php
     
     $query = $this->db->get('pacientes');
+    print(json_encode($query->result()));
 
-    echo json_encode($query->result()));
-
-    
+   
 
